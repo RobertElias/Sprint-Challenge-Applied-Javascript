@@ -16,7 +16,7 @@ function Header() {
     
     // create elements
     const Head = document.createElement('div');
-    Head.classList.add('date');
+    Head.classList.add('header');
     
     const classDate = document.createElement('span');
     classDate.classList.add('date');
