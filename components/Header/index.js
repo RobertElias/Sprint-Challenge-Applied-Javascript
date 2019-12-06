@@ -20,14 +20,14 @@ function Header() {
     
     const classDate = document.createElement('span');
     classDate.classList.add('date');
-    classDate.textContent = 'March 28, 2019';
+    classDate.textContent = 'SMARCH 28, 2019';
 
     const myH1 = document.createElement('h1');
     myH1.textContent = 'Lambda Times';
     
     const classTemp = document.createElement('span');
     classTemp.classList.add('temp');
-    classTemp.textContent = '98';
+    classTemp.textContent = '98°';
 
     //appendChild()
 
@@ -38,3 +38,5 @@ function Header() {
     container.appendChild(Head);
     
 }
+
+Header();
