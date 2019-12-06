@@ -40,6 +40,7 @@ Edit this document to include your answers after each question. Make sure to lea
     # Node lists are specific to browsers where arrays are more specific for Javascript
 5. What is a component?
     # Stand alone independent parts of the application that are responsible for handling specific jobs or functions. 
+
     
 ### Git Set up
 
