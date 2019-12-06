@@ -18,10 +18,19 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-axios.get('https://lambda-times-backend.herokuapp.com/articles')
-.then(response => {
-    console.log(response);
-})
+function showCards() {
+    axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then(response =>{
+        const artData = response.data.articles;
+        const artValues = Object.values(artData);
+        //console.log(response.data);
+        artValues.forEach(item => {
+            item.forEach(items => {
+                Cards(items);
+            })
+        });
+    })
+}
 
 const show = document.querySelector('.cards-container');
 
@@ -59,3 +68,5 @@ function Cards(object){
     show.appendChild(Card);
     
 }
+
+showCards();
