@@ -20,5 +20,23 @@
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .then(response => {
-    console.log(response.data);
+    console.log(response);
 })
+
+const show = document.querySelector('.cards-container');
+
+function Cards(object){
+    
+    //createElement
+    const Card = document.createElement('div');
+    Card.classList.add('card');
+    
+    const Headline = document.createElement('div');
+    Headline.classList.add('headline');
+    Headline.textContent = object.headline;
+
+   
+    
+    
+    
+}
