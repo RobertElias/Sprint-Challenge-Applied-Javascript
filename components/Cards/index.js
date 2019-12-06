@@ -35,8 +35,19 @@ function Cards(object){
     Headline.classList.add('headline');
     Headline.textContent = object.headline;
 
-   
+    const Author = document.createElement('div');
+    Author.classList.add('author');
+
+    const ImagesDiv = document.createElement('div');
+    ImagesDiv.classList.add('img-container');
     
+    const ImagesTag = document.createElement('img');
+    ImagesTag.src = object.authorPhoto;
     
+    const Span = document.createElement('span');
+    Span.textContent = object.authorName;
+
+    
+
     
 }
